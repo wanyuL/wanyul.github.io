@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7d6">
+  <meta name="description" content="Wanyu Lei — postdoc at the Redwood Center at UC Berkeley. Recent news and research notes on learning theory.">
+  <title>wanyu lei</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 26'%3E%3Cpath d='M10 3Q12 0 14 3L23 21Q25 24 21 24H3Q-1 24 1 21Z' fill='%23f3cc51' stroke='%238d752f' stroke-width='1.2'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fff7d6;
+      --ink: #24292e;
+      --date: #386a94;
+      --line: #e5d9a8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      overflow-wrap: break-word;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      position: relative;
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    header { display: flex; justify-content: flex-start; margin-bottom: 18px; }
+
+    .signature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .signature svg { width: 18px; height: 21px; flex: none; }
+
+    main { margin: 0; }
+
+    .introduction {
+      margin: 0;
+    }
+
+    section { margin-top: 24px; }
+
+    h2 {
+      margin: 0 0 16px;
+      padding-bottom: .3em;
+      border-bottom: 1px solid var(--line);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    .news-date { color: var(--date); white-space: nowrap; }
+    .news li + li { margin-top: 4px; }
+    .topic + .topic { margin-top: 20px; }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .topic ul { padding-left: 2em; list-style: disc; }
+    .topic li + li { margin-top: 4px; }
+    .topic li::marker { color: var(--ink); }
+
+    .site-footer { margin-top: 28px; color: #95958c; font-size: 13px; font-weight: 400; }
+    .site-footer p { display: flex; align-items: center; gap: 7px; margin: 0; }
+    .construction-icon { font-size: 16px; filter: grayscale(1); opacity: .65; }
+
+    @media (max-width: 767px) {
+      .page { padding: 32px 20px 28px; }
+      header { margin-bottom: 14px; }
+      .signature svg { width: 16px; height: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1 class="signature">
+        <svg viewBox="0 0 24 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 3Q12 0 14 3L23 21Q25 24 21 24H3Q-1 24 1 21Z" fill="#f3cc51" stroke="#8d752f" stroke-width="1.2"/></svg>
+        <span>Wanyu Lei</span>
+      </h1>
+    </header>
+
+    <main>
+      <p class="introduction">Hello! I am Wanyu Lei, a postdoc at the Redwood Center at UC Berkeley, where I have embarked on a new journey into (deep) learning theory, motivated by the broader goals of understanding intelligence and building more efficient and safer AI systems. Previously, I earned my PhD at Yale University and my B.S. at Peking University.</p>
+
+      <section aria-labelledby="news-heading">
+        <h2 id="news-heading">Selected recent news</h2>
+        <ul class="news">
+          <li><span class="news-date">[2026 Fall]</span> Chalk talk at ML theory group, UC Berkeley.</li>
+          <li><span class="news-date">[2026 Fall]</span> Awarded the Unconventional AI Grant (co-PI with Daniel Kunin and Fritz Sommer).</li>
+          <li><span class="news-date">[2026 Summer]</span> Invited talk at MIT.</li>
+          <li><span class="news-date">[2026 Summer]</span> At IAIFI exploring AI for theoretical physics.</li>
+        </ul>
+      </section>
+
+      <section class="research-notes" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Research notes/blogs</h2>
+        <div class="topic">
+          <h3>[Physics of learning]</h3>
+          <ul>
+            <li>Primer on physics of Bayesian learning</li>
+            <li>Statistical mechanics of transfer learning</li>
+          </ul>
+        </div>
+        <div class="topic">
+          <h3>[Mathematical deep learning theory]</h3>
+          <ul>
+            <li>Leap complexity, a measure for functional hierarchy</li>
+            <li>To grok the theory of groking</li>
+            <li>NTK and the lazy regime</li>
+          </ul>
+        </div>
+        <div class="topic">
+          <h3>[Group theory and Representation theory]</h3>
+          <ul>
+            <li>Fourier transform of discrete groups</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p><span class="construction-icon" aria-hidden="true">🚧</span><span>links and more coming soon!</span></p>
+    </footer>
+  </div>
+</body>
+</html>
